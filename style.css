@@ -1,0 +1,89 @@
+html {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.wrap-div {
+    scrollbar-width: thin;
+    scrollbar-color: #d0323d;
+}
+
+.wrap-div::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+.wrap-div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.wrap-div::-webkit-scrollbar-thumb {
+    background-color: #d0323d;
+    border-radius: 5px;
+}
+
+.wrap-div {
+    display: flex;
+    height: 260px;
+    width: 800px;
+    background-color: rgb(218, 241, 241);
+    border: 1px solid darkcyan;
+    padding: 2px;
+    overflow-x: auto;
+}
+
+.preyoutube {
+    display: flex;
+    width: 100%;
+}
+
+.preyoutube__block {
+    display: flex;
+    margin: 6px;
+    min-width: 48%;
+}
+
+.preyoutube__block iframe {
+    width: 100%;
+}
+
+.preyoutube__block-iframe {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+    width: 100%;
+    background-size: cover;
+}
+
+.preyoutube__block:first-child {
+    margin-right: 4px;
+}
+
+.preyoutube__block:last-child {
+    margin-left: 4px;
+}
+
+.preyoutube__block .preyoutube__block-ytb-ico {
+    background: url('youtube-play-btn.png') no-repeat;
+    background-position: 0 -50px;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 50px;
+    width: 69px;
+    transition: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.preyoutube__block:hover .preyoutube__block-ytb-ico {
+    background-position: 0 0;
+}
